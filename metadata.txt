@@ -1,0 +1,17 @@
+[general]
+name=Wycinanie i konwersja (rastry i wektory) - Clipping and conversion (rasters and vectors)
+qgisMinimumVersion=3.34
+qgisMaximumVersion=3.99
+description=Wsadowe wycinanie i konwersja formatu rastrow (wg arkuszy) i wektorow (wg poligonow, w tym geobaza ESRI) bez zmiany ukladu wspolrzednych danych. Batch clipping and format conversion of rasters (by map sheets) and vectors (by polygons, incl. ESRI File Geodatabase) without changing the data CRS.
+version=1.0.0
+author=Sławek Szymański
+email=apka.tarcz@gmail.com
+about=RASTRY: wycinanie wsadowe po siatce arkuszy (jeden plik SHP/GPKG = jeden arkusz o nazwie rastra), zasieg dopasowany do siatki pikseli, tlo + maska albo kanal alfa, konwersja formatu (GeoTIFF, COG, JPEG, PNG, JPEG 2000, WebP, BMP, IMG) z automatycznym plikiem georeferencyjnym, czysta konwersja bez przeliczen (gdal_translate), wymuszenie 8-bit, DPI, resampling, tryb malo miejsca na dysku; pliki bez ukladu (np. JPG z samym .jgw) - uklad z arkusza, z listy (domyslnie EPSG:2180) albo wycinanie bez ukladu. WEKTORY: konwersja formatu wszystkich danych czytanych przez QGIS (SHP, GPKG, geobaza ESRI .gdb, GML, GeoJSON, KML, DXF, TAB, CSV, FlatGeobuf, SQLite) do GPKG, GDB, SHP, GeoJSON, GML, TAB, FlatGeobuf, SQLite, DXF, CSV - bez przeliczen; wycinanie poligonami z folderu (kazda warstwa = osobny katalog wynikowy), przyciecie geometrii albo wybor obiektow w calosci. Raporty CSV, interfejs dwujezyczny PL/EN. RASTERS: batch clipping by map sheets, format conversion with world files, pure conversion without transformation. VECTORS: format conversion (incl. ESRI File Geodatabase) and clipping by polygons, no transformation. CSV reports, bilingual PL/EN interface.
+tags=raster,vector,batch,wsadowo,clip,wycinanie,konwersja,conversion,arkusze,map sheets,geodatabase,gdb,shp,gpkg,geotiff,poland,polska
+repository=https://github.com/apkatarcz-slaw/wycinanie_i_konwersja_qgis3
+tracker=https://github.com/apkatarcz-slaw/wycinanie_i_konwersja_qgis3/issues/
+homepage=https://github.com/apkatarcz-slaw/wycinanie_i_konwersja_qgis3
+license=GPL-3.0-or-later
+category=Raster
+icon=icon.png
+experimental=False
